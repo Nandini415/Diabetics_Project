@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Diabetes Predictor for Women</title>
     <meta charset="utf8" />
-    <meta http-equiv="X-UA-Compatible" content="IE = edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -31,56 +31,146 @@
       src="https://kit.fontawesome.com/5f59ca6ad3.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <h2 class="logo">Diabetes Predictor for Women</h2>
-        <div class="header d-flex flex-row justify-content-center" id="home">
-        <div class="d-flex flex-row justify-content-end">
-        <ul class="ml-auto">
-          <li><a href="#awareness">Diabetes Awareness</a></li>
-          <li><a href="#predict">Predict Diabetes</a></li>
-        </ul>
-      </div>
-      </div>
-      </nav>
+        <nav>
+            <h2 class="logo">Diabetes Predictor for Women</h2>
+            <div class="header d-flex flex-row justify-content-center" id="home">
+                <div class="d-flex flex-row justify-content-end">
+                    <ul class="ml-auto">
+                        <li><a href="#awareness">Diabetes Awareness</a></li>
+                        <li><a href="#predict">Predict Diabetes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <div class="home-section-container">
-      <div class="main-container d-flex justify-content-center flex-column">
-        <div class="text-center">
-          <div class="d-flex flex-row justify-content-center m-5">
-            <a class="button-sty" href="/predict_diabetes">
-              Predict Diabetes Disease
-            </a>
-          </div>
-          <div class="d-flex flex-row justify-content-center m-5">
-            <a class="button-sty" href="/awareness">
-              Women Diabetes Awareness
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="about-us-section-container p-5" id="awareness">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-                  <img src="static/db4.png" alt="Diabetes Awareness Image" class="img-fluid rounded-img">
-              </div>
-            <div class="col-12 col-md-6 col-lg-6">
-              <div class="card shadow p-5 mb-5 pink-card" style="min-height: 600px;"> <!-- Adjusted padding and minimum height -->
-                <h1 class="text-center">Our Mission</h1>
-                <p class="about-content">
-                    Diabetes, a condition where the body struggles with insulin production or usage, presents unique challenges for women. Hormonal changes, especially during pregnancy, can lead to gestational diabetes, which might evolve into type 2 diabetes. Additionally, conditions like PCOS increase diabetes risk. Fluctuations during menstrual cycles can also complicate diabetes management. Early detection is vital, so symptoms like frequent urination and constant fatigue shouldn't be overlooked. Fortunately, with a balanced diet and regular check-ups, diabetes is manageable. Awareness and proactive care are key, ensuring a healthier future for women and their families. Knowledge remains our best defense against this condition.
-                </p>
-              </div>
+        <div class="main-container d-flex justify-content-center flex-column">
+            <div class="text-center">
+                <div class="d-flex flex-row justify-content-center m-5">
+                    <a class="button-sty" href="#predict_diabetes">
+                        Predict Diabetes Disease
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-center m-5">
+                    <a class="button-sty" href="#awareness">
+                        Women Diabetes Awareness
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-  </div>
-  </div>
-  </body>
-  <script src="static/script.js"></script>
+    <div class="about-us-section-container p-5" id="awareness">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <img src="static/db4.png" alt="Diabetes Awareness Image" class="img-fluid rounded-img">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card shadow p-5 mb-5 pink-card" style="min-height: 600px;"> <!-- Adjusted padding and minimum height -->
+                        <h1 class="text-center">Our Mission</h1>
+                        <p class="about-content">
+                            Diabetes, a condition where the body struggles with insulin production or usage, presents unique challenges for women. Hormonal changes, especially during pregnancy, can lead to gestational diabetes, which might evolve into type 2 diabetes. Additionally, conditions like PCOS increase diabetes risk. Fluctuations during menstrual cycles can also complicate diabetes management. Early detection is vital, so symptoms like frequent urination and constant fatigue shouldn't be overlooked. Fortunately, with a balanced diet and regular check-ups, diabetes is manageable. Awareness and proactive care are key, ensuring a healthier future for women and their families. Knowledge remains our best defense against this condition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container" id="predict_diabetes">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <form action="/#predict_diabetes" method="post">
+                    <div class="inp-sty mb-3">
+                        <label for="Pregnancies" class="label-sty">Enter No.of Pregnancies</label>
+                        <input
+                            id="Pregnancies"
+                            type="number"
+                            name="Pregnancies"
+                            placeholder="Pregnancies"
+                            required="required"
+                        />
+                    </div>
+                    <div class="inp-sty mb-3">
+                        <label for="Glucose" class="label-sty">Enter Glucose</label>
+                        <input id="Glucose" type="number" name="Glucose" placeholder="Glucose" required="required" />
+                    </div>
+                    <div class="inp-sty  mb-3">
+                        <label for="BloodPressure" class="label-sty">Enter BloodPressure</label>
+                        <input id="BloodPressure" type="number" name="BloodPressure" placeholder="BloodPressure" required="required" />
+                    </div>
+                    <div class="inp-sty  mb-3">
+                        <label for="SkinThickness" class="label-sty">SkinThickness</label>
+                        <input
+                            id="SkinThickness"
+                            type="number"
+                            name="SkinThickness"
+                            placeholder="SkinThickness"
+                            required="required"
+                        />
+                    </div>
+                    <div class="inp-sty  mb-3">
+                        <label for="Insulin" class="label-sty">Enter Insulin</label>
+                        <input
+                            id="Insulin"
+                            type="number"
+                            name="Insulin"
+                            placeholder="Insulin"
+                            required="required"
+                        />
+                    </div>
+                    <div class="inp-sty  mb-3">
+                        <label for="BMI" class="label-sty">Enter BMI</label>
+                        <input
+                            id="BMI"
+                            type="number"
+                            name="BMI"
+                            placeholder="BMI"
+                            required="required"
+                        />
+                    </div>
+                    <div class="inp-sty  mb-3">
+                        <label for="DiabetesPedigreeFunction" class="label-sty">Enter DiabetesPedigreeFunction</label>
+                        <input
+                            type="number"
+                            id="DiabetesPedigreeFunction"
+                            name="DiabetesPedigreeFunction"
+                            placeholder="DiabetesPedigreeFunction"
+                            required="required"
+                        />
+                    </div>
+                    <div class="inp-sty  mb-3">
+                        <label for="Age" class="label-sty">Enter Age</label>
+                        <input
+                            type="number"
+                            id="Age"
+                            name="Age"
+                            placeholder="Age"
+                            required="required"
+                        />
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="button-predict">Predict</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card shadow p-5 mb-5 pink-card" style="min-height: 600px;"> <!-- Adjusted padding and minimum height -->
+                    <h2 class="result-text text-center">Diagnosed with Diabetes: <strong>{{prediction_text }}</strong> </h2>
+                    <p class="about-content">
+                        {{output}}
+                    </p>
+                </div>
+            </div>
+                
+                
+        
+
+        </div>
+    </div>
+</div>
+    <script src="static/script.js"></script>
+</body>
 </html>
