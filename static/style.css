@@ -165,7 +165,7 @@ nav ul li a:hover::after {
   
     border-color: transparent;
   
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 245, 247);
     font-weight: bold;
     color: #111;
   }
