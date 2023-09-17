@@ -95,17 +95,17 @@
                     </div>
                     <div class="inp-sty mb-3">
                         <label for="Glucose" class="label-sty">Enter Glucose</label>
-                        <input id="Glucose" type="number" name="Glucose" placeholder="Glucose" required="required" />
+                        <input id="Glucose" type="float" name="Glucose" placeholder="Glucose" required="required" />
                     </div>
                     <div class="inp-sty  mb-3">
                         <label for="BloodPressure" class="label-sty">Enter BloodPressure</label>
-                        <input id="BloodPressure" type="number" name="BloodPressure" placeholder="BloodPressure" required="required" />
+                        <input id="BloodPressure" type="float" name="BloodPressure" placeholder="BloodPressure" required="required" />
                     </div>
                     <div class="inp-sty  mb-3">
                         <label for="SkinThickness" class="label-sty">SkinThickness</label>
                         <input
                             id="SkinThickness"
-                            type="number"
+                            type="float"
                             name="SkinThickness"
                             placeholder="SkinThickness"
                             required="required"
@@ -115,7 +115,7 @@
                         <label for="Insulin" class="label-sty">Enter Insulin</label>
                         <input
                             id="Insulin"
-                            type="number"
+                            type="float"
                             name="Insulin"
                             placeholder="Insulin"
                             required="required"
@@ -125,7 +125,7 @@
                         <label for="BMI" class="label-sty">Enter BMI</label>
                         <input
                             id="BMI"
-                            type="number"
+                            type="float"
                             name="BMI"
                             placeholder="BMI"
                             required="required"
@@ -134,7 +134,7 @@
                     <div class="inp-sty  mb-3">
                         <label for="DiabetesPedigreeFunction" class="label-sty">Enter DiabetesPedigreeFunction</label>
                         <input
-                            type="number"
+                            type="float"
                             id="DiabetesPedigreeFunction"
                             name="DiabetesPedigreeFunction"
                             placeholder="DiabetesPedigreeFunction"
@@ -158,7 +158,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6">
                 <div class="card shadow p-5 mb-5 pink-card" style="min-height: 600px;"> <!-- Adjusted padding and minimum height -->
-                    <h2 class="result-text text-center">Diagnosed with Diabetes: <strong>{{prediction_text }}</strong> </h2>
+                    <h2 class="result-text text-center">Diagnosed with Diabetes: <strong>{{prediction_text}}</strong> </h2>
                     <p class="about-content">
                         {{output}}
                     </p>
