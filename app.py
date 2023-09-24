@@ -3,7 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 import pickle
-
+from ml_model import *
 diabetes_model_path = 'rf_pipeline.pkl'
 diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
 app = Flask(__name__)
